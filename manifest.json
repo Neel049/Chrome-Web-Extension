@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Instant Text to Speech",
+    "version": "0.4",
+    "description": "Convert the selected text to speech.",
+    "permissions": ["contextMenus", "activeTab", "storage", "notifications"],
+    "background": {
+        "scripts": ["contextMenu.js", "speech.js"],
+        "persintent": false
+    },
+    "icons": {
+        "16": "images/icon16.png", 
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "browser_action": {
+        "default_icon": "images/icon128.png",
+        "default_title": "Instant Text to Speech",
+        "default_popup": "popup.html"
+    }
+}
